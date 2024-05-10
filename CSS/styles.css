@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: grid;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff0000 0%, #000000 100%, #ff0000 90%);
+}
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 250px;
+}
+button {
+    background-color: maroon;
+    border: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px red;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.delete, .shift, .space, .enter {
+    font-size: 20px;
+}
+
+.delete:hover, .shift:hover, .space:hover, .enter:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.delete, .enter { 
+    width: 100px; 
+}
+
+.shift { 
+    width: 70px;
+ }
+
+.space { 
+    width: 350px; 
+}
+
+.textarea {
+    border-bottom: 3px solid maroon;
+    box-shadow: 0 0 10px red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+/* .sect {
+    display: inline-flex;
+} */
+.container{
+    display: flex;
+}
